@@ -1,0 +1,42 @@
+1.Create Operations:
+    Insert a Single Document:
+        db.collectionName.insertOne({ key1: value1, key2: value2, ... });
+    Insert Multiple Documents:
+        db.collectionName.insertMany([
+            { key1: value1, key2: value2, ... },
+            { key1: value1, key2: value2, ... },
+            ...
+        ]);
+
+2.Read Operations:
+    Find Documents:
+        db.collectionName.find({ key: value });
+    Find One Document:
+        db.collectionName.findOne({ key: value });
+
+3.Update Operations:
+    Update a Single Document:
+        db.collectionName.updateOne(
+            { key: value },
+            { $set: { keyToUpdate: newValue } }
+        );
+    Update Multiple Documents:
+        db.collectionName.updateMany(
+            { key: value },
+            { $set: { keyToUpdate: newValue } }
+        );
+
+4.Delete Operations:
+    Delete a Single Document:
+        db.collectionName.deleteOne({ key: value });
+    Delete Multiple Documents:
+        db.collectionName.deleteMany({ key: value });
+    Delete All Documents in Collection:
+        db.collectionName.deleteMany({});
+    Drop Collection:
+        db.collectionName.drop();
+    Drop Database:
+        db.dropDatabase();
+
+
+ 
